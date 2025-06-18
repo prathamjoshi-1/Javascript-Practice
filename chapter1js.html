@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body{
+      height: 100vh;
+      background-image: url(https://c4.wallpaperflare.com/wallpaper/875/761/178/tree-night-sky-lonely-tree-alone-wallpaper-preview.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-size: cover;
+    }
+    .navbar{
+      display: flex;  
+      margin-left: 40px;
+      margin-top: 5px;
+      
+    }
+    .logo{
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #ff6a00;
+    }
+    .home{
+      margin-left: 100px;
+      margin-top: 13px;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .about{
+      margin-left: 100px;
+      margin-top: 13px;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .service{
+      margin-left: 100px;
+      margin-top: 13px;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .design{
+      margin-left: 100px;
+      margin-top: 13px;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .contact{
+      margin-left: 100px;
+      margin-top: 13px;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    .search-bar{
+      margin-left: 100px;
+      margin-top: 3px;
+      height: 33px;
+      width: 160px;
+      border: 0.2px solid #ff6a00;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-right: transparent;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      background: transparent;
+      color: white;
+    }
+    input::placeholder{
+      color: white;
+    }
+    b:hover{
+      color: black;
+      cursor: pointer;
+    }
+    #src-btn{
+      margin-top: 3px;
+      height: 36.5px;
+      width: 75px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ff6a00;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      border: transparent;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      margin-right: 40px;
+    }
+    .content{
+      display: flex;
+    }
+    h1{
+      margin-left: 40px;
+      margin-top: 90px;
+      color: white;
+      font-size: 60px;
+      line-height: 1.3;
+    }
+    #paragph{
+      margin-left: 40px;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      font-size: 18px;
+
+    }
+    h1{
+      margin-bottom: 10px;
+    }
+    p{
+      margin-top: 2px;
+    }
+    #join-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 40px;
+      height: 45px;
+      width: 150px;
+      background: #ff6a00;
+      border: transparent;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      border-radius: 5px;
+    }
+    .login-box{
+      margin-top: 90px;
+      height: 420px;
+      width: 300px;
+      border: 2px solid transparent;
+      background-color: black;
+      opacity: 75%;
+      border-radius: 12px;
+    }
+    #head-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 38px;
+      width: 225px;
+      color: #ff6a00;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 25px;
+      background: white;
+      border: 2px solid white;
+      border-radius: 8px;
+      margin-top: 25px;
+      margin-left: 35.5px;
+    }
+    #email{
+      height: 28px;
+      width: 240px;
+      color: white;
+      margin-top: 40px;
+      margin-left: 31px;
+      background-color: transparent;
+      border: 2px solid #ff6a00;
+      border-top:transparent;
+      border-left: transparent;
+      border-right: transparent;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+    }
+    #password{
+      height: 28px;
+      width: 240px;
+      color: white;
+      margin-top: 30px;
+      margin-left: 31px;
+      background-color: transparent;
+      border: 2px solid #ff6a00;
+      border-top:transparent;
+      border-left: transparent;
+      border-right: transparent;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+    }
+    #login{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 45px;
+      width: 230px;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      background: #ff6a00;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      margin-top: 35px;
+      margin-left: 35.5px;
+    }
+    .anch{
+      color: white;
+      margin-top: 13px;
+      margin-left: 20%;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 1.5;
+    }
+    .part2{
+      margin-right: 40px;
+      margin-left: 400px;
+    }
+    i{
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    .social-mdi{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    i:hover{
+      color: #ff6a00;
+    }
+    u:hover{
+      color: green;
+      cursor: pointer;
+    }
+    
+    
+  </style>
+</head>
+<body>
+</body>
+
+    <!-- Navbar -->
+    <header>
+    <div class="navbar">
+      <div class="logo"><b>PraRoz</b></div>
+      <div class="home"><b>HOME</b></div>
+      <div class="about"><b>ABOUT</b></div>
+      <div class="service"><b>SERVICE</b></div>
+      <div class="design"><b>DESIGN</b></div>
+      <div class="contact"><b>CONTACT</b></div>
+      <input type="text" class="search-bar" placeholder="Type to Search">
+      <button id="src-btn">Search</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="content">
+      <div class="part1">
+      <h1>Web Design & <br><span style="color: #ff6a00;">Development</span><br>Cource</h1>
+
+      <div id="paragph">
+      <p><b>Web Design is a specialisation of the design stream.They also use HTML,<br>CSS,WYSIWYG editing software. mark up validators etc.,<br>to create design elements.</b></p>
+      </div>
+
+      <button id="join-btn"><b>JOIN US</b></button>
+    </div>
+
+    <div class="part2">
+      <div class="login-box">
+        <div id="head-box"><b>Login Here</b></div>
+        <input type="email" id="email" placeholder="Enter Email Here">
+        <input type="password" id="password" placeholder="Enter Password Here">
+        <button id="login"><b>Login</b></button>
+
+        <div class="anch">Don't have an account?<p style="color: #ff6a00; margin-left:22%;"><u>Sign up</u></p></div>
+
+        <div class="social-mdi">
+
+          <!-- Facebook -->
+          <i class="fab fa-facebook" ></i>
+          
+          <!-- Instagram -->
+          <i class="fab fa-instagram"></i>
+  
+          <!-- Twitter -->
+          <i class="fab fa-twitter"></i>
+  
+          <!-- Google -->
+          <i class="fab fa-google"></i>
+  
+          <!-- Skype -->
+          <i class="fab fa-skype"></i>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+</body>
+</html>

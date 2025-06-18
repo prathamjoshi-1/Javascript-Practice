@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcii</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #444;
+    }
+    .calculator{
+        width: 350px;
+        height: 600px;
+        border: 2px solid white;
+        background-color: #000;
+        border: transparent;
+        border-radius: 30px;
+    }
+    .display{
+      height: 150px;
+      width: 325px;
+      margin-top: 15px;
+      margin-left: 10.5px;
+      border-radius: 20px;
+      background-color: #68ae84;
+      margin-bottom: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 50px;
+      border: transparent;
+    }
+    .button{
+      height: 65px;
+      width: 65px;
+      margin-left: 15.5px;
+      margin-top: 15px;
+      border-radius: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 25px;
+      color: black;
+      border: transparent;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" class="display" > 
+
+    <button class="button" style="background-color: rgb(222, 117, 19); color: white
+    " onclick="currno=' '; document.querySelector('.display').value=currno;">AC</button>
+
+    <button class="button" style="background-color: rgb(222, 117, 19); color: white;" >( )</button>
+
+    <button class="button" style="background-color: rgb(222, 117, 19); color: white;" onclick="currno=currno+'%'; document.querySelector('.display').value=currno;">%</button>
+
+    <button class="button"style="background-color: rgb(222, 117, 19); color: white"; onclick="currno=currno+'/'; document.querySelector('.display').value=currno ">÷</button>
+
+    <button class="button" style="background-color: #999" onclick="currno=currno+'7'; document.querySelector('.display').value=currno ">7</button>
+
+    <button class="button" style="background-color: #999" onclick="currno=currno+'8'; document.querySelector('.display').value=currno ">8</button>
+
+    <button class="button" style="background-color: #999" onclick="currno=currno+'9'; document.querySelector('.display').value=currno ">9</button>
+
+    <button class="button" style="background-color: rgb(222, 117, 19); color: white"; onclick="currno=currno+'*'; document.querySelector('.display').value=currno ">X</button>
+
+    <button class="button" style="background-color: #999"; onclick="currno=currno+'4'; document.querySelector('.display').value=currno ">4</button>
+
+    <button class="button" style="background-color: #999"; onclick="currno=currno+'5'; document.querySelector('.display').value=currno ">5</button>
+
+    <button class="button" style="background-color: #999"; onclick="currno=currno+'6'; document.querySelector('.display').value=currno ">6</button>
+
+    <button class="button" style="background-color: rgb(222, 117, 19); color: white"; onclick="currno=currno+'-'; document.querySelector('.display').value=currno ">-</button>
+
+    <button class="button" style="background-color: #999"; onclick="currno=currno+'1'; document.querySelector('.display').value=currno ">1</button>
+
+    <button class="button" style="background-color: #999"; onclick="currno=currno+2; document.querySelector('.display').value=currno ">2</button>
+
+    <button class="button" style="background-color: #999"; onclick="currno=currno+'3'; document.querySelector('.display').value=currno ">3</button>
+
+    <button class="button" style="background-color: rgb(222, 117, 19); color: white;" onclick="currno=currno+'+'; document.querySelector('.display').value=currno ">+</button>
+
+    <button class="button" style="background-color: #999"; onclick="currno=currno+'0'; document.querySelector('.display').value=currno ">0</button>
+
+    <button class="button" style="background-color: #999"; onclick="currno=currno+'.'; document.querySelector('.display').value=currno ">.</button>
+
+    <button class="button" style="background-color: #999"; onclick="currno=currno.slice(0,-1); document.querySelector('.display').value=currno ">⌫</button>
+
+    <button class="button" style="background-color: rgb(222, 117, 19); color: white"; onclick=" let result=eval(currno); currno=result; document.querySelector('.display').value=currno ">=</button>
+  </div>
+
+  <script>
+    let currno='';
+    document.querySelector('.display').value=currno;
+  </script>
+</body>
+</html>
