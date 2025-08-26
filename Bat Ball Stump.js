@@ -1,4 +1,3 @@
-<script>
     function playGame(userChoice) {
       const userChoiceMessage = `You Have Chosen ${userChoice}`;
       
@@ -29,4 +28,4 @@
 
       alert(`${userChoiceMessage} ${compChoiceMessage} ${resultMessage}`);
     }
-  </script>
+</script>
