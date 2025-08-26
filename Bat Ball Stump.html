@@ -1,113 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bat Ball & Stump</title>
-    <style>
-        body{
-            text-align: center;
-            background-color: #000;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        button{
-            height: 35px;
-            width: 100px;
-            border-radius: 5px;
-            border: transparent;
-            margin-left: 15px;
-            background-color: rgb(154, 240, 154);
-            font-size: 20px;
-            font-weight: bold;
-            color: black;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bat Ball & Stump</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: #000;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    button {
+      height: 35px;
+      width: 100px;
+      border-radius: 5px;
+      border: transparent;
+      margin: 10px;
+      background-color: rgb(154, 240, 154);
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <div class="game">
-        <h1>Bat Ball Stump Game</h1>
-        <button onclick="console.log('You Have Chosen Bat');
-        const userChoiceMessaege='You Have Chosen Bat';
-        let randomnum=Math.random()*3;
-        let computerChoice;
-        if(randomnum>0 && randomnum<=1){
-            computerChoice='Bat';
-        }else if(randomnum>1 && randomnum<=2){
-            computerChoice='Ball';
-        }else{
-            computerChoice='Stump';
-        }
-        
-        const compChoiceMessage=`-> Computer Choice : ${computerChoice}`;
+  <div class="game">
+    <h1>Bat Ball Stump Game</h1>
+    <button onclick="playGame('Bat')">Bat</button>
+    <button onclick="playGame('Ball')">Ball</button>
+    <button onclick="playGame('Stump')">Stump</button>
+  </div>
 
-        let resultMessage;
-        if(computerChoice==='Ball'){
-            resultMessage='->User Won.';
-        }else if(computerChoice==='Bat'){
-            resultMessage='->It is Tie.';
-        }else if(computerChoice==='Stump'){
-            resultMessage='->Computer Won';
-        }
-
-        alert(`${userChoiceMessaege} ${compChoiceMessage} ${resultMessage}`);
-
-        ">Bat</button>
-
-
-        <button onclick="console.log('You Have Chosen Ball');
-        userChoiceMessaege='You Have Chosen Ball';
-        randomnum=Math.random()*3;
-        
-        if(randomnum>0 && randomnum<=1){
-            computerChoice='Bat';
-        }else if(randomnum>1 && randomnum<=2){
-            computerChoice='Ball';
-        }else{
-            computerChoice='Stump';
-        }
-        
-        compChoiceMessage=`-> Computer Choice : ${computerChoice}`;
-
-        
-        if(computerChoice==='Stump'){
-            resultMessage='->User Won.';
-        }else if(computerChoice==='Ball'){
-            resultMessage='->It is Tie.';
-        }else if(computerChoice==='Bat'){
-            resultMessage='->Computer Won';
-        }
-
-        alert(`${userChoiceMessaege} ${compChoiceMessage} ${resultMessage}`);
-        ">Ball</button>
-
-        <button onclick="console.log('You Have Chosen Stump');
-        userChoiceMessaege='You Have Chosen Stump';
-        randomnum=Math.random()*3;
-        
-        if(randomnum>0 && randomnum<=1){
-            computerChoice='Bat';
-        }else if(randomnum>1 && randomnum<=2){
-            computerChoice='Ball';
-        }else{
-            computerChoice='Stump';
-        }
-        
-        compChoiceMessage=`-> Computer Choice : ${computerChoice}`;
-
-        if(computerChoice==='Bat'){
-            resultMessage='->User Won.';
-        }else if(computerChoice==='Stump'){
-            resultMessage='->It is Tie.';
-        }else if(computerChoice==='Ball'){
-            resultMessage='->Computer Won';
-        }
-
-        alert(`${userChoiceMessaege} ${compChoiceMessage} ${resultMessage}`);">
-        Stump</button>
-    </div>
-    <script>
-
-    </script>
+  
 </body>
 </html>
