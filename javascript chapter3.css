@@ -1,0 +1,17 @@
+   .class-button{
+            color: red  ;
+        }
+        .bag{
+            background-color: rgb(193, 242, 193);
+            border-radius: 10px;
+            border: none;
+            height: 30px;
+            width: 100px;
+            color: rgb(20, 61, 20);
+        }
+        .wishlist{
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 30px;
+            width: 100px;
+        }
